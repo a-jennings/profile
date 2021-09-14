@@ -7,6 +7,7 @@ body {
 h1 {
     color: white;
     font-size: 48px;
+    text-align: center;
 } 
 
 em {
@@ -15,36 +16,27 @@ em {
 
 h2 {
     color: rgba(255, 255, 255, 0.6);
+    text-align: center;
 }
 
 a {
     text-decoration: none;
 }
 
-.container {
-    height: 100vh;
-    border: 3px solid green;
-}
-
-.horizontal-center {
-    display: flex;
-}
-
 .vertical-center {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 15%;
+  left: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .avatar {
     border-radius: 10%;
     width: 200px;
-}
-
-.button {
-    text-align: center;
 }
 
 .css-button-rounded--sand {
@@ -67,6 +59,10 @@ a {
     color: #adb5bd
   }
 
-  .row {
-      border: 1px solid red;
+  .horizontal-center {
+    display: flex;
+    justify-content: center;
   }
+
+
+  
