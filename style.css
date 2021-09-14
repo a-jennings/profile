@@ -1,22 +1,29 @@
 body {
-    background-image: url(/images/background.jpg);
-    background-size: cover;
+    background-color: #dee2e6;
     font-family: 'Orbitron', sans-serif;
 }
 
 h1 {
-    color: white;
+    color: #212529;
     font-size: 48px;
     text-align: center;
+    margin-top: 8px;
 } 
 
 em {
-    color: rgb(190, 67, 18);
+    color: #495057;
 }
 
 h2 {
-    color: rgba(255, 255, 255, 0.6);
+    color: #212529;
     text-align: center;
+    margin-top: 8px;
+}
+
+p {
+    color: #212529;
+    text-align: center;
+    margin-top: 8px;
 }
 
 a {
@@ -35,34 +42,26 @@ a {
 }
 
 .avatar {
-    border-radius: 10%;
-    width: 200px;
+  border-radius: 10%;
+  width: 200px;
 }
 
-.css-button-rounded--sand {
-    min-width: 130px;
-    height: 40px;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    border: 2px solid #adb5bd;
-    background: #adb5bd;
-  }
-  .css-button-rounded--sand:hover {
-    background: #fff;
-    color: #adb5bd
-  }
+.horizontal-center {
+  display: flex; 
+  justify-content: center;
+}
 
-  .horizontal-center {
-    display: flex;
-    justify-content: center;
-  }
+.icon {
+    font-size: 32px;
+    color: #495057;
+    margin: 0px 16px;
+}
 
+.icon:hover {
+    color: #adb5bd;
+}
 
-  
+.line-break {
+    margin-top: 8px;
+    border-top: 1px solid #495057;
+}
