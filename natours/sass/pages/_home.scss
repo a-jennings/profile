@@ -65,6 +65,15 @@
     }
 }
 
+.form__radio-group {
+    @include respond(phone) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+}
+
 .column-half {
     flex: 0 0 40%;
     @include respond(phone) {

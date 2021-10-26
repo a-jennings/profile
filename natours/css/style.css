@@ -764,6 +764,13 @@ u-padding-bottom-large {
     .row {
       flex-wrap: wrap; } }
 
+@media (max-width: 37.5em) {
+  .form__radio-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 0; } }
+
 .column-half {
   flex: 0 0 40%; }
   @media (max-width: 37.5em) {
