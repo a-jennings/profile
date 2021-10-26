@@ -208,6 +208,7 @@ u-padding-bottom-large {
     left: 0;
     overflow: hidden;
     width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
     .card__side--front {
       background-color: #fff; }
