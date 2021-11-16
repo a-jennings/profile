@@ -1,3 +1,7 @@
+.m-vert-lg {
+  margin: 3rem 0;
+}
+
 *,
 *::before,
 *::after {
@@ -25,6 +29,11 @@ html {
   font-family: "Source Sans Pro Regular", sans-serif;
 }
 
+.heading-2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
 .banner {
   padding: 0 10rem;
   display: flex;
@@ -41,6 +50,24 @@ html {
   .banner {
     padding: 0 3rem;
   }
+}
+.banner--home {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/banner-home.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.banner--commercial {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/banner-commercial.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.banner--bathroom {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/banner-bathroom.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .banner__heading {
   text-align: center;
@@ -75,7 +102,6 @@ html {
 }
 
 .cards {
-  margin-top: 5rem;
   margin-bottom: 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -157,7 +183,8 @@ html {
 }
 .contact-info__phone,
 .contact-info__times,
-.contact-info__ooh {
+.contact-info__ooh,
+.contact-info__email {
   padding: 0.5rem 0;
   font-size: 2rem;
   display: grid;
@@ -167,12 +194,14 @@ html {
 }
 .contact-info__phone i,
 .contact-info__times i,
-.contact-info__ooh i {
+.contact-info__ooh i,
+.contact-info__email i {
   color: #f6801e;
 }
 .contact-info__phone > *,
 .contact-info__times > *,
-.contact-info__ooh > * {
+.contact-info__ooh > *,
+.contact-info__email > * {
   padding: 0 0.5rem;
 }
 .contact-info__number:link,
@@ -186,6 +215,7 @@ html {
 .contact-info__info-container {
   display: flex;
   flex-direction: column;
+  padding: 1rem 0;
 }
 .contact-info__cert {
   height: 7rem;
@@ -198,7 +228,7 @@ html {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 56.25em) {
+@media (max-width: 75em) {
   .nav-bar {
     justify-content: center;
   }
@@ -207,7 +237,7 @@ html {
   margin-left: 10rem;
   height: 7rem;
 }
-@media (max-width: 56.25em) {
+@media (max-width: 75em) {
   .nav-bar__logo {
     margin-left: 0;
   }
@@ -215,10 +245,10 @@ html {
 .nav-bar__links {
   margin-right: 10rem;
   display: grid;
-  grid-template-columns: repeat(4, min-content);
+  grid-template-columns: repeat(6, min-content);
   gap: 2.5rem;
 }
-@media (max-width: 56.25em) {
+@media (max-width: 75em) {
   .nav-bar__links {
     display: none;
   }
@@ -228,6 +258,9 @@ html {
   font-size: 1.7rem;
   transition: color 0.2s;
 }
+.nav-bar__link--highlighted {
+  color: #f6801e !important;
+}
 .nav-bar__link:link,
 .nav-bar__link:visited {
   text-decoration: none;
@@ -235,6 +268,29 @@ html {
 }
 .nav-bar__link:hover {
   color: #f6801e;
+}
+
+.review-card {
+  background-color: #f7f6f3;
+  padding: 3rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  font-size: 1.7rem;
+}
+.review-card__author {
+  margin-top: 1.5rem;
+  text-align: right;
+  color: #d86709;
+}
+
+.review-cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 56.25em) {
+  .review-cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 .container {
@@ -250,4 +306,15 @@ html {
   .container__cards {
     width: 100%;
   }
+}
+@media (max-width: 37.5em) {
+  .container__reviews {
+    width: 100%;
+  }
+}
+.container__all-reviews {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
